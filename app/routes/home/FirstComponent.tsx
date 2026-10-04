@@ -1,8 +1,11 @@
+import Image from "~/components/Image";
 import FirstComponentImage from "./FirstComponentImage";
+import { Link } from "react-router";
 
 export default function FirstComponent() {
+  const lists = ["html", "css", "js", "ts", "node", "react"];
   return (
-    <div className="glow w-full shadow my-4  rounded-2xl p-2 flex">
+    <div className="glow w-full shadow my-4  rounded-2xl p-2 flex justify-between">
       <div className="py-10 px-10 sm:w-[40%]">
         <h5 className="my-3 gradient">HELLO I'M</h5>
         <i className="my-4">Specialist in web development</i>
@@ -17,13 +20,22 @@ export default function FirstComponent() {
           <button className="px-8 bg-black text-white py-4 rounded-full shadow ">
             View My Work
           </button>
-          <button className="px-8 ml-4 py-4 rounded-full shadow bg-white">
+          <a
+            download
+            // href="cv.pdf"
+            href="logo.jpeg"
+            className="px-8 ml-4 py-4 rounded-full shadow bg-white"
+          >
             Download CV
-          </button>
+          </a>
         </div>
         <h3>WEB TOOLS</h3>
         <div className="flex my-4">
-          <div className="size-15 bg-primary"></div>
+          {lists.map((list) => (
+            <Link to={"/skills?" + list} key={list} className="size-15 mr-4">
+              <Image src={"/icons/" + list + ".png"} />
+            </Link>
+          ))}
         </div>
       </div>
       <FirstComponentImage />
