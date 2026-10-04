@@ -12,6 +12,9 @@ body {
   padding: 1rem 3rem;
   /* background-color: rgb(247, 247, 247); */
   background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.photoroom.com%2Fv1%2Fassets-cached.jpg%3Fpath%3Dbackgrounds_v3%2Fwhite%2FPhotoroom_white_background_extremely_fine_texture_only_white_co_d285fc74-d562-4a9f-b0b8-8cf7500231d8.jpg&f=1&nofb=1&ipt=8f88cb83c2268eaf92087822bdeada4ce4cc7427d021a4096c8d0e1934cfa5bc&ipo=images);
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 .glow {
@@ -39,4 +42,9 @@ h4 {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
+}
+
+@theme{
+  --color-primary: dodgerblue;
+  --color-secondary: purple;
 }

@@ -9,7 +9,7 @@ export default function Header() {
     <div className="p-2 sm:p-4 flex justify-between items-center rounded-2xl  glow">
       <div className="flex items-center">
         <div className="shadow-lg w-10 rounded-lg  overflow-hidden">
-          <Image />
+          <Image src="logo.jpeg" />
         </div>
         <div className="ml-3">
           <h3>Neverthelesse</h3>

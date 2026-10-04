@@ -1,3 +1,5 @@
-export default function Image() {
-  return <img src="logo.jpeg" />;
+type imageType = { src: string };
+
+export default function Image({ src }: imageType) {
+  return <img src={src} />;
 }
