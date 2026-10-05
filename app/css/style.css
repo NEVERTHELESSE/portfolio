@@ -5,7 +5,7 @@
 }
 
 h3 {
-  @apply text-2xl font-bold;
+  @apply lg:text-2xl font-bold;
 }
 
 body {
@@ -32,13 +32,11 @@ button {
 }
 
 h2 {
-  font-size: 4rem;
-  font-weight: bolder;
+  @apply text-3xl slg:text-6xl font-bold;
 }
 
 h4 {
-  font-size: 3rem;
-  font-weight: bold;
+  @apply text-2xl my-3 slg:text-6xl font-bold;
 }
 
 .gradient {
@@ -53,6 +51,9 @@ h4 {
 @theme {
   --color-primary: dodgerblue;
   --color-secondary: purple;
+  --breakpoint-slg: 1440px;
+  --breakpoint-lg: 1378px;
+  --breakpoint-mlg: 1024px;
 }
 
 iframe::-webkit-scrollbar {

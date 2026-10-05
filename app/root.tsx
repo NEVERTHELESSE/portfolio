@@ -22,7 +22,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body className="flex flex-col items-center">
-        <section className="px-50">
+        <section className="py-2 w-screen  sm:py-4 px-2 sm:w-[95%] slg:px-6 lg:w-[90%] slg:w-361.5 ">
           <Header />
           {children}
           <Footer />

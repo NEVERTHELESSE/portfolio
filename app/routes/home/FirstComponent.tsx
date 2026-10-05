@@ -5,8 +5,8 @@ import { Link } from "react-router";
 export default function FirstComponent() {
   const lists = ["html", "css", "js", "ts", "node", "react"];
   return (
-    <div className="glow w-full shadow my-4  rounded-2xl p-2 flex justify-between">
-      <div className="py-10 px-10 sm:w-[40%]">
+    <div className="glow w-full shadow my-4  rounded-2xl p-2 lg:flex justify-between">
+      <div className="p-4 lg:p-10 lg:w-[40%]">
         <h5 className="my-3 gradient">HELLO I'M</h5>
         <i className="my-4">Specialist in web development</i>
 
@@ -17,14 +17,14 @@ export default function FirstComponent() {
           user-friendly digital experience
         </p>
         <div className="flex my-8 items-center">
-          <button className="px-8 bg-black text-white py-4 rounded-full shadow ">
+          <button className="p-2 lg:px-8 bg-black text-white lg:py-4 rounded-full shadow ">
             View My Work
           </button>
           <a
             download
             // href="cv.pdf"
             href="logo.jpeg"
-            className="px-8 ml-4 py-4 rounded-full shadow bg-white"
+            className="p-2 lg:px-8 ml-4 lg:py-4 rounded-full shadow bg-white"
           >
             Download CV
           </a>
@@ -32,7 +32,11 @@ export default function FirstComponent() {
         <h3>WEB TOOLS</h3>
         <div className="flex my-4">
           {lists.map((list) => (
-            <Link to={"/skills?" + list} key={list} className="size-15 mr-4">
+            <Link
+              to={"/skills?" + list}
+              key={list}
+              className="size-10 lg:size-15 mr-4"
+            >
               <Image src={"/icons/" + list + ".png"} />
             </Link>
           ))}

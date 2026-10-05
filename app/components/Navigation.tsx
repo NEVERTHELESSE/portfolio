@@ -18,7 +18,7 @@ export default function Navigation() {
         <Link
           to={navigate}
           key={navigate}
-          className={`capitalize hover:bg-gray-300  px-8 ${active === navigate && "bg-white shadow-lg rounded-full p-3"}`}
+          className={`capitalize hover:bg-gray-300 p-2 lg:px-4 slg:px-8 ${active === navigate && "bg-white shadow-lg rounded-full "}`}
         >
           {navigate}
         </Link>
