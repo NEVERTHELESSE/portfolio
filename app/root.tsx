@@ -10,6 +10,7 @@ import {
 import type { Route } from "./+types/root";
 import "./css/style.css";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -21,9 +22,10 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body className="flex flex-col items-center">
-        <section className="w-400">
+        <section className="px-50">
           <Header />
           {children}
+          <Footer />
         </section>
         <ScrollRestoration />
         <Scripts />

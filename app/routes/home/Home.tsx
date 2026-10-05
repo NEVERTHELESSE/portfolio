@@ -1,10 +1,15 @@
 import FirstComponent from "./FirstComponent";
+import ForthComponent from "./ForthComponent";
+import SecondComponent from "./SecondComponent";
+import ThirdComponent from "./ThirdComponent";
 
 export default function Home() {
   return (
-    <div>
+    <main>
       <FirstComponent />
-      <h1 className="text-3xl">neverthelesse is a boy</h1>
-    </div>
+      <SecondComponent />
+      <ThirdComponent />
+      <ForthComponent />
+    </main>
   );
 }
