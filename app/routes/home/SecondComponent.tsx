@@ -3,15 +3,15 @@ import { secondComponents } from "~/data/data";
 
 export default function SecondComponent() {
   return (
-    <div className="glow rounded-2xl p-2 py-6 lg:px-10 my-10">
+    <div className="glow w-full rounded-2xl shadow-lg p-2 py-6 lg:px-10 my-10">
       <p className="gradient">WHAT I DO</p>
       <p className="text-3xl font-bold">Services I Offer</p>
-      <div className="flex justify-between flex-wrap">
+      <div className="flex justify-center sm:justify-between flex-wrap w-full">
         {secondComponents.map(
           ({ id, title, Description, bold, experience }) => (
             <div
               key={id}
-              className="my-4 shadow w-[48%] mlg:w-[23%] rounded-2xl p-2 lg:p-5"
+              className="my-4 shadow-lg w-[90%]  lg:w-[23%] sm:w-[48%] rounded-2xl p-5 lg:p-2"
             >
               <div className="flex justify-between">
                 <div className="size-15 glow shadow-lg rounded-2xl overflow-hidden bg-primary">

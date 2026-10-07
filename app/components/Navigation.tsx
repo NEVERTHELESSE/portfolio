@@ -13,16 +13,18 @@ export default function Navigation() {
   ];
   const [active, setActive] = useState("home");
   return (
-    <div className="flex items-center">
-      {navigates.map((navigate) => (
-        <Link
-          to={navigate}
-          key={navigate}
-          className={`capitalize hover:bg-gray-300 p-2 lg:px-4 slg:px-8 ${active === navigate && "bg-white shadow-lg rounded-full "}`}
-        >
-          {navigate}
-        </Link>
-      ))}
+    <div>
+      <div className="hidden md:flex  items-center">
+        {navigates.map((navigate) => (
+          <Link
+            to={navigate != "home" ? navigate : "/"}
+            key={navigate}
+            className={`capitalize hover:bg-gray-300 p-2 lg:px-4 slg:px-8 ${active === navigate && "bg-white shadow-lg rounded-lg md:rounded-full "}`}
+          >
+            {navigate}
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }

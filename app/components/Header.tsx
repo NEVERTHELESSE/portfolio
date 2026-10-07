@@ -6,7 +6,7 @@ import Theme from "./Theme";
 
 export default function Header() {
   return (
-    <div className="p-2 sm:p-4 w-full flex justify-between items-center rounded-2xl glow">
+    <div className="p-2 sm:p-4  flex justify-between items-center rounded-2xl glow shadow-lg">
       <div className="flex items-center">
         <div className="shadow-lg w-10 rounded-lg  overflow-hidden">
           <Image src="logo.jpeg" />

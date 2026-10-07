@@ -5,7 +5,7 @@ import { Link } from "react-router";
 export default function FirstComponent() {
   const lists = ["html", "css", "js", "ts", "node", "react"];
   return (
-    <div className="glow w-full shadow my-4  rounded-2xl p-2 lg:flex justify-between">
+    <div className="glow w-full shadow-lg my-4  rounded-lg p-2 lg:flex justify-between">
       <div className="p-4 lg:p-10 lg:w-[40%]">
         <h5 className="my-3 gradient">HELLO I'M</h5>
         <i className="my-4">Specialist in web development</i>

@@ -9,6 +9,7 @@ import {
 
 import type { Route } from "./+types/root";
 import "./css/style.css";
+import "./css/index.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
