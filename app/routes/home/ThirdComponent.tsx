@@ -15,7 +15,7 @@ export default function ThirdComponent() {
   ];
 
   return (
-    <div className="glow shadow-lg rounded-2xl p-6">
+    <div className="glow shadow-lg  rounded-2xl p-6">
       <h5 className="gradient">Technologies I Use</h5>
       <p className="text-2xl font-bold">TOOLS & SKILLS</p>
       <div className="flex my-5 justify-between">

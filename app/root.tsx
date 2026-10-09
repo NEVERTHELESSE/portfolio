@@ -22,8 +22,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body className="flex flex-col items-center">
-        <section className="py-2 w-screen  sm:py-4 px-2 sm:w-[95%] slg:px-6 lg:w-[90%] slg:w-361.5 ">
+      <body className="dark:bg-bgD dark:text-white flex flex-col items-center">
+        <section className="relative py-2 w-screen overflow-hidden  sm:py-4 px-2 sm:w-[95%] slg:px-6 lg:w-[90%] slg:w-361.5 ">
+          <div className="absolute w-[100vw] top-[90vh] h-[100rem] glow  bg-green-500"></div>
           <Header />
           {children}
           <Footer />
