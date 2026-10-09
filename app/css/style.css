@@ -10,7 +10,7 @@
   --color-primaryD: dodgerblue;
   --color-secondaryD: purple;
   --color-bgD: #1d1d1f;
-  --color-glow: rgba(223, 223, 223, 0.568);
+  --color-glow: rgba(223, 223, 223);
   --color-glowD: #44444491;
   --color-bg: white;
   --breakpoint-slg: 1440px;
@@ -36,7 +36,8 @@ button {
   backdrop-filter: blur(30px);
   /* backdrop-filter: blur(50px) brightness(1.5) contrast(1.5) saturation(1.5); */
   -webkit-backdrop-filter: blur(40px);
-  @apply dark:bg-glowD bg-glow;
+  background: rgba(223, 223, 223, 0.568);
+  /* @apply dark:bg-glowD bg-glow; */
 }
 
 .box {
