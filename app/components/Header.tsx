@@ -6,30 +6,27 @@ import Theme from "./Theme";
 
 export default function Header() {
   return (
-    <header className="w-full relative">
-      <div className="p-2 sm:p-4 fixed w-[80vw] box  flex z-50  justify-between items-center rounded-2xl glow shadow-lg">
-        <div className="flex items-center">
-          <div className="shadow-lg w-10 rounded-lg  overflow-hidden">
-            <Image src="logo.jpeg" />
-          </div>
-          <div className="hidden flex-col mlg:flex ml-3">
-            <h3>Neverthelesse</h3>
-            <p className="leading-3">Software Developer</p>
-          </div>
+    <header className="w-full  p-2 sm:p-4   flex z-50  justify-between items-center rounded-2xl glow shadow-lg glow sticky bottom-0 box ">
+      <div className="flex items-center">
+        <div className="shadow-lg w-10 rounded-lg  overflow-hidden">
+          <Image src="logo.jpeg" />
         </div>
-        <Navigation />
-        <div className="flex items-center">
-          <Theme />
-          <Link
-            to="/contact"
-            className="slg:text-2xl flex ml-2  slg:ml-6  items-center"
-          >
-            <span className="mr-2 hidden mlg:flex">Let's Talk</span>
-            <LuMessageCircleMore />
-          </Link>
+        <div className="hidden flex-col mlg:flex ml-3">
+          <h3>Neverthelesse</h3>
+          <p className="leading-3">Software Developer</p>
         </div>
       </div>
-      <div className="w-full h-20 "></div>
+      <Navigation />
+      <div className="flex items-center">
+        <Theme />
+        <Link
+          to="/contact"
+          className="slg:text-2xl flex ml-2  slg:ml-6  items-center"
+        >
+          <span className="mr-2 hidden mlg:flex">Let's Talk</span>
+          <LuMessageCircleMore />
+        </Link>
+      </div>
     </header>
   );
 }

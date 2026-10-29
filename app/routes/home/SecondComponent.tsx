@@ -8,14 +8,14 @@ export default function SecondComponent() {
       <p className="text-3xl font-bold">Services I Offer</p>
       <div className="flex justify-center sm:justify-between flex-wrap w-full">
         {secondComponents.map(
-          ({ id, title, Description, bold, experience }) => (
+          ({ id, title, Description, src, bold, experience }) => (
             <div
               key={id}
               className="my-4 shadow-lg w-[90%]  lg:w-[23%] sm:w-[48%] rounded-2xl p-5 lg:p-2"
             >
               <div className="flex justify-between">
                 <div className="size-15 glow shadow-lg rounded-2xl overflow-hidden bg-primary">
-                  <Image src="logo.jpeg" />
+                  <Image src={src} />
                 </div>
                 <div className="size-15 rounded-2xl overflow-hidden glow shadow-lg flex items-center justify-center">
                   <h3>{experience}+</h3>

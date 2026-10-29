@@ -28,7 +28,12 @@ export default function HomeWebsiteShow({ setActiveSrc }: propT) {
             <div className="w-full p-4 ">
               <h3>{title} </h3>
               <p>{description}</p>
-              <Link to={link} className="font-bold my-4 text-right">
+              <Link
+                to={link}
+                target="_blank"
+                rel="noopener"
+                className="font-bold my-4 text-right"
+              >
                 View Project
               </Link>
             </div>

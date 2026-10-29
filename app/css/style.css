@@ -9,10 +9,10 @@
   --color-secondary: purple;
   --color-primaryD: dodgerblue;
   --color-secondaryD: purple;
-  --color-bgD: #1d1d1f;
   --color-glow: rgba(223, 223, 223);
   --color-glowD: #44444491;
   --color-bg: white;
+  --color-bgD: #1d1d1f;
   --breakpoint-slg: 1440px;
 }
 
